@@ -21,6 +21,7 @@ class WhatsappBot:
                 f"//span[@title='{grupo_ou_pessoa}']")
             time.sleep(3)
             campo_grupo.click()
+            # Automatizar a procura do chat box, altera de maquina para maquina
             chat_box = self.driver.find_element_by_class_name('_13mgZ')
             time.sleep(3)
             chat_box.click()
